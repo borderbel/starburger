@@ -1,0 +1,76 @@
+/*------------------#PAGE REVIEW----------------------*/
+
+.reviews {
+
+  
+  &__list {
+    height: 100%;
+  }
+
+  &__item {
+    height: 50%;
+    width: 25%;
+    float: left;
+  }
+}
+
+.review {
+  width: 100%;
+  height: 100%;
+  color: $white;
+  position: relative;
+
+  &__img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+  }
+
+  &__hover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(20, 20, 20, .7);
+    transform: scale(0.9);
+    opacity: 0;
+    transition: .4s;
+  }
+
+  &:hover {
+    .review__hover {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  &-hover {
+    &__content {
+      padding: 50px 20px;
+    }
+    &__title {
+      font-family: 'gagalinregular';
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      margin-bottom: 10px;
+    }
+    
+    &__button {
+      background-color: $grey;
+      &:hover {
+        background-color: $red;
+      }
+    }
+  }
+}
+
+

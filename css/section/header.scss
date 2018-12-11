@@ -1,0 +1,58 @@
+/*------------------#SECTION HEADER----------------------*/
+
+
+.header {
+  padding-top: 10px;
+  font-size: 13px;
+  width: $container-width;
+  margin: 0 auto;
+
+  &__right {
+    padding-top: 20px;
+  }
+
+  &__list {
+    display: inline-block;
+  }
+
+  &__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+
+    &:after {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 5px;
+      height: 5px;
+      background-color: $white;
+      border-radius: 50%;
+      margin-left: 15px;
+    }
+  }
+
+  &__link {
+    font-size: 13px;
+    color: $white;
+    vertical-align: middle;
+    display: inline-block;
+    font-family: 'ubuntumedium';
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,45 @@
+/*------------------#SECTION NAV----------------------*/
+
+.nav {
+  position: fixed;
+  right: 50px;
+  top: 90px;
+  z-index:999;
+
+  &__item {
+    margin-bottom: 5px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    overflow: hidden;
+    transition: .4s;
+
+    &_active {
+      border: 1px solid $red;
+    }
+
+    &:hover {
+      border: 1px solid $red;
+    }
+  }
+
+  &__link {
+    width: 16px;
+    height: 16px;
+    display: block;
+    position: relative;
+
+    &:before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      display: block;
+      border-radius: 50%;
+      background-color: $red;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -3px;
+      margin-left: -3px;
+    } 
+  }
+}

@@ -1,0 +1,76 @@
+/*------------------#PAGE MENU----------------------*/
+
+.menu {
+  background: url(../img/bg/menu.jpg) center center no-repeat;
+  background-size: cover;
+  position: relative;
+  color: $white;
+  
+  &__title {
+    position: absolute;
+    top: 100px;
+    left: 90px;
+  }
+
+  &__list {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__item {
+    float: left;
+    height: 100%;
+    &_active {
+      .menu-trigger__text {
+        color: $yellow;
+      }
+      .menu__content {
+        width: 550px;
+      }
+    }
+  }
+
+  &__trigger {
+    display: block;
+    width: 80px;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    float: left;
+
+  }
+
+  &-trigger__text {
+    font-family: 'gagalinregular';
+    font-size: 40px;
+    color: $white;
+    position: absolute;
+    top: 50%;
+    height: 80px;
+    margin-top: -40px;
+    white-space: nowrap;
+    width: 650px;
+    left: 50%;
+    margin-left: -320px;
+    transform: rotate(-90deg);
+    text-align: center;
+  }
+
+  &__content {
+    background: rgba(47, 50, 52, .929);
+    width: 0;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    transition: .4s;
+  }
+  &-content__text {
+    width: 550px;
+    padding: 60px 30px;
+  }
+
+}

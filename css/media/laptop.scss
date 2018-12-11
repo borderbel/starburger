@@ -1,0 +1,37 @@
+@media screen and (max-width: 992px) {
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.first_page {
+		min-height: 650px;
+	}
+
+	.r-block, .l-block {
+    	max-width: 50%;
+    	box-sizing: border-box;
+	}
+
+	.first-page__right {
+		float: left;
+		padding: 80px 0 0 0 ;
+	}
+
+	.title, {
+		font-size: 4.0625rem;
+	}
+
+	.first-page__title {
+		margin-bottom: 0;
+	}
+
+	.first-page__img {
+    	max-width: 100%;
+	}
+
+	.first-page__desc{
+		font-size: 3.125rem;
+	}
+
+}

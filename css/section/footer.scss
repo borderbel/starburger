@@ -1,0 +1,50 @@
+/*------------------#SECTION FOOTER----------------------*/
+
+.footer {
+  background: url(../img/bg/footer.jpg) center center no-repeat;
+  background-size: cover;
+  
+  &__address {
+    color: $white;
+  }
+
+  &__tel-icon {
+    fill: $red;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__tel-text {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'ubuntubold';
+    color: $red;
+  }
+
+}
+
+
+.socials {
+  margin-top: 18px;
+
+  &__item {
+    display: inline-block;
+    margin-right: 15px;
+  }
+
+  &__link {
+    display: block;
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    fill-opacity: .502;
+    transition: .4s;
+    &:hover {
+      fill-opacity: 1;
+    }
+  }
+}

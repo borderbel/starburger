@@ -1,0 +1,52 @@
+/*------------------#SECTION FIRST-PAGE----------------------*/
+
+.first-page {
+  background: url(../img/bg/first-page.jpg) center center no-repeat;
+  background-size: cover;
+  font-size: 0;
+  position: relative;
+
+  &__left,
+  &__right {
+    width: 50%;
+  }
+
+
+  &__right {
+    padding: 80px 0 0 20px;
+  }
+
+  &__img {
+    max-width: 100%;
+  }
+
+  &__title {
+    color: $yellow;
+    margin-bottom: 40px;
+  } 
+
+  &__desc {
+    font-family: 'lifehackmedium';
+    font-size: 65px;
+    color: $white;
+    line-height: 65px;
+  }
+
+}
+
+
+.down-arrow {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 25px;
+
+  svg {
+    transition: .4s;
+  }
+
+  &:hover svg{
+    width: 35px;
+    height: 35px;
+  }
+}

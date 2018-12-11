@@ -1,0 +1,41 @@
+/**
+ * Created by Тарлюк Сергей Николаевич on 23.03.2017.
+ */
+
+//colors
+$white: #fff;
+$orange: #e45028;
+$yellow: #f9b43b;
+$grey: #2f3234;
+$red: #e35028;
+
+$container-width: 940px;
+
+
+//layout
+@import "layout/normalize";
+@import "layout/adjustment";
+@import "layout/common";
+@import "layout/nav";
+@import "layout/owl.carousel";
+@import "layout/jquery.fancybox";
+@import "layout/fonts";
+
+
+//section
+@import "section/header";
+@import "section/first-page";
+@import "section/we";
+@import "section/burgers";
+@import "section/team";
+@import "section/menu";
+@import "section/review";
+@import "section/order";
+@import "section/map";
+@import "section/footer";
+
+
+//media
+@import "media/desktop";
+@import "media/laptop";
+@import "media/tablets";

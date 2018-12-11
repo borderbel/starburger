@@ -1,0 +1,107 @@
+/*------------------#SECTION TEAM----------------------*/
+
+.team {
+  background: url(../img/bg/team.jpg) center center no-repeat;
+  background-size: cover;
+  position: relative;
+  line-height: 1.42;
+
+  &__section {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 50%;
+    background-color: rgba(47, 50, 52, .929);
+    padding: 50px 95px 0 75px;
+
+  }
+
+  &__title {
+    color: $yellow;
+    margin-bottom: 80px;
+  }
+
+  &__item {
+    color: $white;
+    margin-bottom: 40px;
+  }
+
+  &__trigger {
+    color: $white;
+    font-family: 'gagalinregular';
+    margin-bottom: 10px;
+    display: block;
+    position: relative;
+
+    &:before {
+      content: "";
+      display: block;
+      border-top: 7px solid $yellow;
+      border-right: 5px solid transparent;
+      border-left: 5px solid transparent;
+      border-bottom: 0px solid transparent;
+      transform: rotate(0deg);
+      position: absolute;
+      left: -18px;
+      top: 8px;
+      width: 0;
+      height: 0;
+      transition: .3s;
+    }
+
+  }
+
+  .team__content {
+    display: none;
+    overflow: hidden;
+  }
+
+  &__item_active {
+    .team__trigger {
+      color: $yellow;
+      &:before {
+        transform: rotate(180deg);
+      }
+    }
+
+  }
+
+  &__icon {
+
+    display: inline-block;
+    vertical-align: middle;
+    width: 35%;
+  }
+
+  &-icon__img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+  }
+
+  &__text {
+    display: inline-block;
+    vertical-align: middle;
+    width: 60%;
+  }
+
+  &-text__title {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+}
+
+
+
+
+
+
+

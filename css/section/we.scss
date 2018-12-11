@@ -1,0 +1,29 @@
+/*------------------#SECTION-WE----------------------*/
+
+.we {
+  background: url(../img/bg/we.jpg) center center no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &__item {
+    width: 33%;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 70px;
+  }
+}
+
+.we-item {
+
+  &__img {
+    margin-bottom: 25px;
+  }
+
+  &__title {
+    font-family:'lifehackmedium';
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+}
